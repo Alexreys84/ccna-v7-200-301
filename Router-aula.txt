@@ -1,3 +1,7 @@
+ipno shut[
+
+
+
 
  3
 Router>ena
@@ -10,7 +14,7 @@ SP(config-if)#ip add 192.168.1.1 255.255.255.0
 SP(config-if)#no shut
 SP(config-if)#exit
 SP(config)#int s0/0
-SP(config-if)#desc PORTA WAN que LIGA SP ao RJnetintind 
+SP(config-if)#desc PORTA WAN que LIGA SP ao RJnet
 SP(config-if)#ip add 200.100.10.1 255.255.255.0
 SP(config-if)#no shut
 SP(config-if)#clock rate 128000
@@ -19,7 +23,7 @@ SP(config-if)#exit
 SP(config) router rip 
 SP(config-router)#net 192.168.1.0
 SP(config-router)#net 200.100.10.0
-SP(config-router)# "Ctrl+Z"
+SP(config-router)# "Ctrl+Z"no shuta 
 SP#sh run
 SP#copy run star
 
